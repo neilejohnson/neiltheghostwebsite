@@ -1,0 +1,71 @@
+
+
+/* ---------------------------- */
+/* Basic Setup */
+/* ---------------------------- */
+
+/* gets rid of all margins, padding and box-sizing. suggested to add at the beginning of all css sheets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* sets up the basic default style rules of the website. */
+html {
+    background-color: #7f8c8d;
+    color: #fff;
+    /* lato points to the google fonts lato in our style sheet. Arial is specified as backup and sans if that is not available */
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    /* base font-size here is defined. All other font-size will be percentages based off this. */
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/* ---------------------------- */
+/* Reusable objects */
+/* ---------------------------- */
+
+/* This row is the only one with pixel value. all others will be relative to this */
+.row {
+    max-width: 1140px;
+    /* top and bottom margins are set to 0. left and right set to auto or centered */
+    margin: 0 auto;
+}
+
+/* ---------------------------- */
+/* Header */
+/* ---------------------------- */
+
+.main-nav {
+    float: right;
+    /* get rid of bullet points */
+    list-style: none;
+    /* distance from top */
+    margin-top: 55px;
+}
+
+.main-nav li {
+    /* makes the list horizontal instead of vertical */
+    display: inline-block;
+    /* how many pixels they are spaced apart */
+    margin-left: 30px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color:rgba(255, 255, 255, 0.966);
+    padding-bottom: 5px; 
+    border-bottom: 2px solid #34495e;
+}
