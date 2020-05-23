@@ -16,7 +16,7 @@ html {
     background-color: #7f8c8d;
     color: #fff;
     /* lato points to the google fonts lato in our style sheet. Arial is specified as backup and sans if that is not available */
-    font-family: "Lato", "Arial", sans-serif;
+    font-family: "Balsamiq Sans", "Arial", sans-serif;
     font-weight: 300;
     /* base font-size here is defined. All other font-size will be percentages based off this. */
     font-size: 20px;
@@ -38,34 +38,119 @@ html {
 /* Header */
 /* ---------------------------- */
 
+.header {
+    background-color: black;
+}
+
 .main-nav {
-    float: right;
+    float: center;
     /* get rid of bullet points */
     list-style: none;
     /* distance from top */
-    margin-top: 55px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .main-nav li {
     /* makes the list horizontal instead of vertical */
     display: inline-block;
     /* how many pixels they are spaced apart */
-    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.main-nav li:first-child { margin-left: 0px; }
+
+.main-nav li a {
+    display: block;
+    padding: 9px 30px;
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     color: #fff;
-    font-size: 90%;
+    background-color: #000;
+    font-size: 60%;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.2s, border-bottom 0.2s;
+    transition: color 0.7s;
+    transition: background-color 0.7s;
 }
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    color:rgba(255, 255, 255, 0.966);
-    padding-bottom: 5px; 
-    border-bottom: 2px solid #34495e;
+    color: #000;
+    background-color: #fff;
+    /*padding-bottom: 5px; 
+    border-bottom: 2px solid #34495e;*/
+}
+
+/* ---------------------------- */
+/* Hero */
+/* ---------------------------- */
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.7)), url(img/bubbles.jpg);
+    background-color: rgb(32, 32, 32);
+    margin-top: -27px;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /*background-attachment: fixed;*/
+}
+
+/* ---------------------------- */
+/* Footer */
+/* ---------------------------- */
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: #000;
+}
+
+footer p {
+    display: inline-block;
+    font-style: italic;
+    font-size: 80%;
+    color: rgb(194, 194, 194);
+}
+
+.social-links {
+    float: right;
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    font-size: 90%;
+    margin-left: 10px;
+}
+
+.icon-instagram,
+.icon-github,
+.icon-twitter {
+    transition: color 0.2s;
+}
+
+.icon-instagram:hover {
+    color: #8a3ab9;
+}
+
+.icon-github:hover {
+    color: #c9510c;
+}
+
+.icon-twitter:hover {
+    color: #00acee
+}
+
+
+
+
+.social-links li a {
+    font-size: 140%;
 }
