@@ -42,6 +42,15 @@ html {
     background-color: black;
 }
 
+#header-logo {
+    display: inline-block;
+    border-radius: 200px;
+}
+
+.ghost-logo {
+    background-image: url('../img/home.png');
+}
+
 .main-nav {
     float: center;
     /* get rid of bullet points */
@@ -65,7 +74,19 @@ html {
 
 .main-nav li a {
     display: block;
-    padding: 9px 30px;
+    padding: 9px 25px;
+}
+
+li.Nav-logo {
+    border-top: none;
+    border-bottom: none;
+}
+
+#header-logo {
+    height: 50px;
+    width: auto;
+    margin-bottom: -20px;
+    border: none;
 }
 
 .main-nav li a:link,
@@ -73,7 +94,7 @@ html {
     letter-spacing: 3px;
     color: #fff;
     background-color: #000;
-    font-size: 60%;
+    font-size: 65%;
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.7s;
@@ -126,31 +147,10 @@ footer p {
 
 .social-links li {
     display: inline-block;
-    font-size: 90%;
-    margin-left: 10px;
-}
-
-.icon-instagram,
-.icon-github,
-.icon-twitter {
-    transition: color 0.2s;
-}
-
-.icon-instagram:hover {
-    color: #8a3ab9;
-}
-
-.icon-github:hover {
-    color: #c9510c;
-}
-
-.icon-twitter:hover {
-    color: #00acee
-}
-
-
-
-
-.social-links li a {
     font-size: 140%;
+}
+
+.social-links li i {
+    margin-left: 15px;
+    color: #fff;
 }

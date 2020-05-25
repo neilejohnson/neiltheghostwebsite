@@ -6,10 +6,10 @@
         <!-- vendor sytlesheets to normalize and stick to grid conventions -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
-        <!-- ionicons -->
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <!-- my very own stylesheet -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <!-- ion icons css file that allows for the i class icons to be used -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <!-- google font. I can change this down the road -->
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap" rel="stylesheet">
         <title>neil.the.ghost</title>
@@ -21,36 +21,41 @@
             <nav>
                 <div class="row">
                     <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Comics</a></li>
-                        <li><a href="#">Illustration</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a id="Nav-Home" href="#">Home</a></li>
+                        <li><a id="Nav-Comics" href="#">Comics</a></li>
+                        <li><a id="Nav-Illustration" href="#">Illustration</a></li>
+                        <li class="Nav-logo"><img id="header-logo" src="resources/img/home.png" alt="home-logo"></li>
+                        <li><a id="Nav-Music" href="#">Music</a></li>
+                        <li><a id="Nav-Store" href="#">Store</a></li>
+                        <li><a id="Nav-About" href="#">About</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
+        <div>
+
+        </div>
         <section class="hero-section">
             <h1>neiltheghost</h1>
             <div class="row">
-                
             </div>
             <p class="row">
                 some text
             </p>
         </section>
+
         <footer>
             <div class="row">
                 <p>
                     &copy; 2020 Neil Johnson
                 </p>
                 <ul class="social-links">
-                    <li class="icon-instagram"><a href="https://www.instagram.com/burningflies/"><ion-icon name="logo-instagram"></ion-icon></a></li>
-                    <li class="icon-github"><a href="https://github.com/neilejohnson"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li class="icon-twitter"><a href="https://twitter.com/neil_the_ghost"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://github.com/neilejohnson"><i class="ion-social-github-outline"></i></a></li>
+                    <li><a href="https://www.instagram.com/burningflies/"><i class="ion-social-instagram-outline"></i></a></li>
+                    <li><a href="https://twitter.com/neil_the_ghost"><i class="ion-social-twitter-outline"></i></a></li>
                 </ul>
             </div>
         </footer>
+        <script src="resources/js/app.js"></script>
     </body>
 </html>
