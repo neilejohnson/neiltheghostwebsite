@@ -8,8 +8,6 @@ const navItems = [
     {id: "#Nav-About", src: "resources/img/about.png", alt:"about-logo"}
 ];
 
-console.log(navItems[0].alt)
-
 //iterate through items list
 for (let item of navItems) {
     //select current navitem
