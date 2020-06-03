@@ -28,7 +28,7 @@ html, body {
     color: #fff;
     /* lato points to the google fonts lato in our style sheet. Arial is specified as backup and sans if that is not available */
     font-family: "Balsamiq Sans", "Arial", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     /* base font-size here is defined. All other font-size will be percentages based off this. */
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -69,7 +69,6 @@ h1 {
     color: #C27D38;
 }
 
-
 /* ---------------------------- */
 /* Header */
 /* ---------------------------- */
@@ -77,38 +76,54 @@ h1 {
 .header {
     background-color: #29211F;
 }
-
+/* 
 #header-logo {
     display: inline-block;
     border-radius: 200px;
     margin-top: 20px;
     margin-left: 40px;
-}
+} */
 
 .main-nav {
     float: right;
     /* get rid of bullet points */
     list-style: none;
     /* distance from top */
-    margin: 30px 0px;
+    margin: 35px 0px;
 }
 
 .main-nav li {
     /* makes the list horizontal instead of vertical */
     display: inline-block;
     /* how many pixels they are spaced apart */
-    margin-left: 30px;
-    border-top: 1px solid #C2BB8A;
-    border-bottom: 1px solid #C2BB8A;
+    /* border-top: 1px solid #C2BB8A;
+    border-bottom: 1px solid #C2BB8A; */
+    font-size: 105%;
 }
 
 .main-nav li:first-child { margin-left: 0px; }
 
-.main-nav li a {
+.main-nav li a:link,
+.main-nav li a:visited {
     display: block;
-    padding: 7px 20px;
+    margin-left: 15px;
+    padding: 7px 5px;
+    letter-spacing: 3px;
+    color: #C2BB8A;
+    font-size: 65%;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent; 
+    transition: opacity 0.2s;
 }
 
+.main-nav li a:hover,
+.main-nav li a:active {
+    opacity: 70%;
+    /*padding-bottom: 5px; */
+    border-bottom: 2px solid #C2BB8A; 
+}
+/* 
 li.Nav-logo {
     border-top: none;
     border-bottom: none;
@@ -119,27 +134,8 @@ li.Nav-logo {
     width: auto;
     margin-bottom: -20px;
     border: none;
-}
+} */
 
-.main-nav li a:link,
-.main-nav li a:visited {
-    letter-spacing: 3px;
-    color: #C2BB8A;
-    background-color: #29211F;
-    font-size: 65%;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: color 0.7s;
-    transition: background-color 0.7s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    color: #29211F;
-    background-color: #C2BB8A;
-    /*padding-bottom: 5px; 
-    border-bottom: 2px solid #34495e;*/
-}
 
 /* ---------------------------- */
 /* Hero */
@@ -191,10 +187,19 @@ footer p span {
 
 .social-links li {
     display: inline-block;
-    font-size: 140%;
+    font-size: 170%;
 }
 
-.social-links li i {
+.social-links li a:link,
+.social-links li a:visited {
     margin-left: 15px;
     color: #8D9876;
+    transition: opacity 0.2s;
 }
+
+.social-links li a:hover,
+.social-links li a:active {
+    opacity: 60%;
+}
+
+
