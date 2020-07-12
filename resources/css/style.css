@@ -24,7 +24,8 @@ greenish: #8D9876
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #7f8c8d;
+    background-color: #F5F4EB;
+    /* background-color: #7f8c8d; */
     color: #fff;
     /* lato points to the google fonts lato in our style sheet. Arial is specified as backup and sans if that is not available */
     font-family: "Balsamiq Sans", "Arial", sans-serif;
@@ -34,10 +35,6 @@ html, body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
-
-/* body {
-    width: 100%;
-} */
 
 
 /* this is defining clearfix. it will fix the spacing when a float or ul messes up the spacing */
@@ -123,19 +120,22 @@ h1 {
     /*padding-bottom: 5px; */
     border-bottom: 2px solid #C2BB8A; 
 }
-/* 
-li.Nav-logo {
-    border-top: none;
-    border-bottom: none;
+
+/* ---------------------------- */
+/* H Elements */
+/* ---------------------------- */
+
+h1 {
+    color: brown;
 }
 
-#header-logo {
-    height: 50px;
-    width: auto;
-    margin-bottom: -20px;
-    border: none;
-} */
+h2 {
+    color: green;
+}
 
+h3 {
+    color: blue;
+}
 
 /* ---------------------------- */
 /* Hero */
@@ -154,6 +154,8 @@ li.Nav-logo {
 .hero-section p {
     color: #29211F;
 }
+
+
 
 /* ---------------------------- */
 /* Footer */
@@ -202,4 +204,24 @@ footer p span {
     opacity: 60%;
 }
 
+.photo-section {
+    text-align: center;
+    display: block;
+}
 
+.photo-section img {
+    height: 500px;
+    width: auto;
+    padding: 20px 0;
+}
+
+.ribbon {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.ribbon img {
+    height: 400px;
+    width: auto;
+}
