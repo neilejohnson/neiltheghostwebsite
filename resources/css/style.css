@@ -138,26 +138,6 @@ h3 {
 }
 
 /* ---------------------------- */
-/* Hero */
-/* ---------------------------- */
-
-.hero-section {
-    /* background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0.7)), url(img/bubbles.jpg); */
-    background-color: #F5F4EB;
-    margin-top: -27px;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    /*background-attachment: fixed;*/
-}
-
-.hero-section p {
-    color: #29211F;
-}
-
-
-
-/* ---------------------------- */
 /* Footer */
 /* ---------------------------- */
 
@@ -244,16 +224,30 @@ footer p span {
     text-align: center;
 }
 
+/* E-H */
+
+.e-h-page img {
+    display: block;
+    /* center all block elements */
+    margin: auto;
+    height: 700px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+/* SAD LAND */
+
 .sad-land-page img {
     height: 300px;
     width: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .sad-land-page img:last-child {
-    padding-left: 7px;
+    padding-left: 5px;
 }
 
+/* SAD CASTLE */
 
 .sad-castle-page img {
     height: 325px;
@@ -263,4 +257,14 @@ footer p span {
 
 .sad-castle-page img:last-child {
     padding-left: 9px;
+}
+
+/* THE LAST STOP */
+
+.the-last-stop-page img {
+    display: block;
+    margin: auto;
+    height: 900px;
+    width: auto;
+    margin-bottom: 50px;
 }
