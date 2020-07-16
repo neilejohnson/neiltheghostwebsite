@@ -268,3 +268,72 @@ footer p span {
     width: auto;
     margin-bottom: 50px;
 }
+
+.comics-landing-page {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.comics-landing-page img {
+    height: 300px;
+    width: auto;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.comics-landing-page img:nth-child(3n) {
+    padding-right: 0px;
+}
+
+/* ---------------------------- */
+/* Overlay */
+/* ---------------------------- */
+
+/* this targets the container that holds the img and text it makes it one solid unit */
+.img-container {
+    /*  */
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    width: auto;
+}
+
+.img-container img {
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    /* speed of all transition */
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #eee;
+}
+
+.img-container:hover .overlay{
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-right {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.img-container:hover .overlay-right{
+    width: 100%;
+}
+
+p {
+    color: brown;
+}
