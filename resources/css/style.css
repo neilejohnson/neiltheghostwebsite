@@ -73,53 +73,47 @@ h1 {
 .header {
     background-color: #29211F;
 }
-/* 
-#header-logo {
-    display: inline-block;
-    border-radius: 200px;
-    margin-top: 20px;
-    margin-left: 40px;
-} */
 
 .main-nav {
     float: right;
-    /* get rid of bullet points */
     list-style: none;
-    /* distance from top */
     margin: 35px 0px;
 }
 
 .main-nav li {
-    /* makes the list horizontal instead of vertical */
     display: inline-block;
-    /* how many pixels they are spaced apart */
-    /* border-top: 1px solid #C2BB8A;
-    border-bottom: 1px solid #C2BB8A; */
     font-size: 105%;
 }
 
 .main-nav li:first-child { margin-left: 0px; }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.nav-other:link,
+.nav-other:visited,
+.nav-focus {
     display: block;
     margin-left: 15px;
     padding: 7px 5px;
     letter-spacing: 3px;
-    color: #C2BB8A;
     font-size: 65%;
     text-decoration: none;
     text-transform: uppercase;
+    color: #C2BB8A;
     border-bottom: 2px solid transparent; 
-    transition: opacity 0.2s;
+    transition: all 0.2s;
 }
 
-.main-nav li a:hover,
-.main-nav li a:active {
-    opacity: 70%;
-    /*padding-bottom: 5px; */
+.nav-focus {
     border-bottom: 2px solid #C2BB8A; 
 }
+
+.nav-other:hover,
+.nav-other:active,
+.nav-focus:hover,
+.nav-focus:active {
+    opacity: 70%;
+    border-bottom: 2px solid #C2BB8A; 
+}
+
 
 /* ---------------------------- */
 /* H Elements */
@@ -130,7 +124,19 @@ h1 {
 }
 
 h2 {
-    color: green;
+    font-family: "Roboto", "Arial", sans-serif;
+    color: #29211F;
+    margin: 60px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 200%;
+    font-weight: 300;
+}
+
+h2::after {
+    height:2px;
+    width: 50px;
+    background-color: black;
 }
 
 h3 {
@@ -182,17 +188,6 @@ footer p span {
 .social-links li a:hover,
 .social-links li a:active {
     opacity: 60%;
-}
-
-.photo-section {
-    text-align: center;
-    display: block;
-}
-
-.photo-section img {
-    height: 500px;
-    width: auto;
-    padding: 20px 0;
 }
 
 .ribbon {
@@ -275,63 +270,109 @@ footer p span {
     margin-bottom: 70px;
 }
 
-.comics-landing-page img {
-    height: 300px;
-    width: auto;
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
-.comics-landing-page img:nth-child(3n) {
-    padding-right: 0px;
-}
-
 /* ---------------------------- */
-/* Overlay */
+/* COMICS - Overlay */
 /* ---------------------------- */
 
 /* this targets the container that holds the img and text it makes it one solid unit */
 .img-container {
     /*  */
-    position: relative;
     display: inline-block;
+    position: relative;
     height: 300px;
-    width: auto;
+    width: 300px;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
-.img-container img {
+.img-container:nth-child(3n) {
+    padding-right: 0px;
+}
+
+.img-comic {
+    height: 300px;
+    width: 300px;
+    transition: transform .5s;
+}
+
+.img-container:hover .img-comic {
+    transform: scale(1.03);
+}
+
+.img-overlay {
+    background-color: #eee;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s ease;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img-container:hover .img-overlay {
+    opacity: .75;
+    top: 85%;
+}
+
+.img-text {
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    color: black;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.img-container:hover .img-text {
+    opacity: 1;
+    bottom: 10px;
+}
+
+/* ---------------------------- */
+/* Illustration */
+/* ---------------------------- */
+
+.illustration-section {
+    text-align: center;
     display: block;
 }
 
-.overlay {
-    position: absolute;
-    /* speed of all transition */
-    transition: all .3s ease;
-    opacity: 0;
-    background-color: #eee;
+.illustration-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
 }
 
-.img-container:hover .overlay{
-    opacity: 1;
+.illustration-img {
+    height: 600px;
+    width: auto;
+    padding: 35px;
+    border-top: 1px solid  #29211F;
+    border-right: 1px solid  #29211F;
+    border-bottom: 1px solid  #29211F;
+    border-left: 1px solid  #29211F;
 }
 
-.text {
-    color: black;
+.illustration-text {
+    font-family: "Roboto", "Arial", sans-serif;
     position: absolute;
-    top: 50%;
+    bottom: -8px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%); 
+    margin: auto;
+    z-index: 1;
+    font-size: 130%;
+    color: #29211F;
+    background-color: #F5F4EB;
+    padding: 0 15px;
+    font-weight: 300;
 }
 
-.overlay-right {
-    height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
-}
-
-.img-container:hover .overlay-right{
-    width: 100%;
+.about-section img {
+    height: 900px;
+    width: auto;
 }
 
 p {
