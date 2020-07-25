@@ -197,7 +197,7 @@ footer p span {
     margin-bottom: 20px;
 }
 .ribbon img {
-    height: 400px;
+    height: 350px;
     width: auto;
 }
 
@@ -207,8 +207,8 @@ footer p span {
 
 .comic-description {
     color: #29211F;
-    width: 60%;
-    margin-left: 20%;
+    width: 700px;
+    margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -319,7 +319,7 @@ footer p span {
 .img-text {
     position: absolute;
     bottom: 0px;
-    left: 15px;
+    left: 20px;
     color: black;
     opacity: 0;
     transition: all .5s ease;
