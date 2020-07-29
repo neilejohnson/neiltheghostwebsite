@@ -193,11 +193,11 @@ footer p span {
 .ribbon {
     display: block;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 .ribbon img {
-    height: 350px;
+    height: 325px;
     width: auto;
 }
 
