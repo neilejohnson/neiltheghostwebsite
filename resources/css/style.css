@@ -28,7 +28,7 @@ html, body {
     /* background-color: #7f8c8d; */
     color: #fff;
     /* lato points to the google fonts lato in our style sheet. Arial is specified as backup and sans if that is not available */
-    font-family: "Balsamiq Sans", "Arial", sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-weight: 500;
     /* base font-size here is defined. All other font-size will be percentages based off this. */
     font-size: 20px;
@@ -82,7 +82,8 @@ h1 {
 
 .main-nav li {
     display: inline-block;
-    font-size: 105%;
+    font-size: 90%;
+    font-family: "Balsamiq Sans", "Arial", sans-serif;
 }
 
 .main-nav li:first-child { margin-left: 0px; }
@@ -114,7 +115,6 @@ h1 {
     border-bottom: 2px solid #C2BB8A; 
 }
 
-
 /* ---------------------------- */
 /* H Elements */
 /* ---------------------------- */
@@ -124,7 +124,6 @@ h1 {
 }
 
 h2 {
-    font-family: "Roboto", "Arial", sans-serif;
     color: #29211F;
     margin: 60px 0;
     text-transform: uppercase;
@@ -140,7 +139,9 @@ h2::after {
 }
 
 h3 {
-    color: blue;
+    color: #29211F;
+    font-size: 140%;
+    margin-bottom: 40px;
 }
 
 /* ---------------------------- */
@@ -154,7 +155,6 @@ footer {
 }
 
 footer p {
-    font-family: "Roboto", "Arial", sans-serif;
     font-size: 120%;
     text-align: center;
     color: #C2BB8A;
@@ -195,10 +195,11 @@ footer p span {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 20px;
-}
-.ribbon img {
-    height: 325px;
     width: auto;
+}
+
+.ribbon img {
+    height: 225px;
 }
 
 /* ---------------------------- */
@@ -207,16 +208,18 @@ footer p span {
 
 .comic-description {
     color: #29211F;
-    width: 700px;
+    width: 650px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .comic-container {
-    width: 70%;
-    margin-left: 15%;
+    width: 800px;
+    margin: auto;
     text-align: center;
+    padding-top: 70px;
+    border-top: 1px solid #29211F;
 }
 
 /* E-H */
@@ -235,7 +238,7 @@ footer p span {
 .sad-land-page img {
     height: 300px;
     width: auto;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .sad-land-page img:last-child {
@@ -245,9 +248,9 @@ footer p span {
 /* SAD CASTLE */
 
 .sad-castle-page img {
-    height: 325px;
+    height: 290px;
     width: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .sad-castle-page img:last-child {
@@ -265,9 +268,30 @@ footer p span {
 }
 
 .comics-landing-page {
+    max-width: 1000px;
     margin-top: 50px;
     text-align: center;
     margin-bottom: 70px;
+}
+
+/* JEREMY THOMAS */
+
+.jeremy-thomas-page img {
+    display: block;
+    margin: auto;
+    height: 650px;
+    width: auto;
+    margin-bottom: 60px;
+}
+
+.jeremy-thomas-chapters {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #8D9876;
+}
+
+.jeremy-thomas-chapters li {
+    padding-bottom: 15px;
 }
 
 /* ---------------------------- */
@@ -279,8 +303,8 @@ footer p span {
     /*  */
     display: inline-block;
     position: relative;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     overflow: hidden;
     margin-right: 20px;
     margin-top: 20px;
@@ -291,8 +315,8 @@ footer p span {
 }
 
 .img-comic {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     transition: transform .5s;
 }
 
@@ -320,6 +344,7 @@ footer p span {
     position: absolute;
     bottom: 0px;
     left: 20px;
+    font-size: 85%;
     color: black;
     opacity: 0;
     transition: all .5s ease;
@@ -356,7 +381,6 @@ footer p span {
 }
 
 .illustration-text {
-    font-family: "Roboto", "Arial", sans-serif;
     position: absolute;
     bottom: -8px;
     left: 50%;
@@ -376,5 +400,6 @@ footer p span {
 }
 
 p {
-    color: brown;
+    color: #29211F;
+    font-size: 80%;
 }
