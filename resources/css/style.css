@@ -194,7 +194,7 @@ footer p span {
     display: block;
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: auto;
 }
 
@@ -401,5 +401,5 @@ footer p span {
 
 p {
     color: #29211F;
-    font-size: 80%;
+    font-size: 70%;
 }
