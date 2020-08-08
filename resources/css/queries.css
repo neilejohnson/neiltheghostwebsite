@@ -1,0 +1,131 @@
+/* big tablet to 1200px: from 1023px to 1199px */
+@media only screen and (max-width: 1200px) {
+
+    .social-links, 
+    .main-nav {
+        margin-right: 3%;
+    }
+}
+
+/* iPad in portrait mode: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+
+/* ---------------------------- */
+/* Comics */
+/* ---------------------------- */
+
+    .comics-landing-page {
+        max-width: 750px;
+    }
+
+    .img-container {
+        display: inline-block;
+        position: relative;
+        height: 225px;
+        width: 225px;
+        overflow: hidden;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    
+    .img-comic {
+        height: 225px;
+        width: 225px;
+    }
+
+    .img-text {
+        font-size: 75%;
+    }
+
+}
+
+/* phones smaller than iPad: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+
+/* ---------------------------- */
+/* Comics */
+/* ---------------------------- */
+
+    .ribbon {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .ribbon img {
+        width: 100%;
+        height: auto;
+    }
+
+    .comic-description {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .comic-container {
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 50px;
+    }
+
+    .sad-land-page img {
+        display: block;
+        width: 300px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .sad-land-page img:last-child {
+        padding-left: 0;
+    }
+
+    .sad-land-page:last-of-type {
+        margin-bottom: 30px;
+    }
+
+/* ---------------------------- */
+/* Footer */
+/* ---------------------------- */
+
+    footer p {
+        font-size: 100%;
+    }
+    
+    footer p span {
+        font-size: 70%;
+    }
+
+    
+    .social-links li {
+        font-size: 150%;
+    }
+
+    .social-links li a:link,
+    .social-links li a:visited {
+        margin-left: 12px;
+    }
+
+}
+
+/* small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+    
+/* ---------------------------- */
+/* Comics */
+/* ---------------------------- */
+
+    .ribbon img {
+        width: 170%;
+        height: auto;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .comic-container {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
