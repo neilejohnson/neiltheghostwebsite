@@ -37,8 +37,19 @@
         font-size: 75%;
     }
 
-}
+    .comic-container {
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 50px;
+    }
 
+    .sad-castle-page img {
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+}
+    
 /* phones smaller than iPad: from 481px to 767px */
 @media only screen and (max-width: 767px) {
 
@@ -63,12 +74,6 @@
         margin-bottom: 40px;
     }
 
-    .comic-container {
-        width: 90%;
-        margin-left: 5%;
-        padding-top: 50px;
-    }
-
     .sad-land-page img {
         display: block;
         width: 300px;
@@ -77,11 +82,13 @@
         margin-bottom: 20px;
     }
     
-    .sad-land-page img:last-child {
+    .sad-land-page img:last-child,
+    .sad-castle-page img:last-child {
         padding-left: 0;
     }
 
-    .sad-land-page:last-of-type {
+    .sad-land-page:last-of-type,
+    .sad-castle-page:last-of-type {
         margin-bottom: 30px;
     }
 
@@ -107,6 +114,27 @@
         margin-left: 12px;
     }
 
+    
+    .comic-container {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .e-h-page img, 
+    .the-last-stop-page img,
+    .jeremy-thomas-page img {
+        width: 90%;
+        margin-left: 5%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .sad-castle-page img {
+        width: 70%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
 }
 
 /* small phones: from 0 to 480px */
@@ -124,8 +152,11 @@
         transform: translateX(-50%);
     }
 
-    .comic-container {
-        width: 100%;
-        margin-left: 0%;
+    .sad-land-page img,
+    .sad-castle-page img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 25px;
     }
+
 }
