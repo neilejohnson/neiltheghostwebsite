@@ -78,6 +78,7 @@ h1 {
     float: right;
     list-style: none;
     margin: 35px 0px;
+    display: block;
 }
 
 .main-nav li {
@@ -113,6 +114,24 @@ h1 {
 .nav-focus:active {
     opacity: 70%;
     border-bottom: 2px solid #C2BB8A; 
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #C2BB8A;
+}
+
+#toggle {
+    display: none;
 }
 
 /* ---------------------------- */

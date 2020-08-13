@@ -54,6 +54,48 @@
 @media only screen and (max-width: 767px) {
 
 /* ---------------------------- */
+/* MOBILE NAV */
+/* ---------------------------- */
+
+    .main-nav { 
+        font-size: 180%;
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .main-nav li { 
+        display: block; 
+        margin: 0;
+        text-align: center;
+
+    }
+
+    .nav-other:link,
+    .nav-other:visited,
+    .nav-focus {
+        margin-left: 0;
+        padding: 11px 0 10px 0;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited { 
+        border-bottom: solid #C2BB8A 1px;
+    }
+
+    .main-nav li:first-child a:link,
+    .main-nav li:first-child a:visited { 
+        border-top: solid #C2BB8A 1px;
+        padding-top: 12px;
+    }
+
+    .mobile-nav-icon { display: inline-block; }
+
+    #toggle:checked ~ .main-nav {
+        display: block;
+    }
+
+/* ---------------------------- */
 /* Comics */
 /* ---------------------------- */
 
