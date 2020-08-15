@@ -1,21 +1,12 @@
-// const mobileNav = document.querySelector("#mobile-nav-id");
-// const mainNav = document.querySelector(".main-nav")
+const mobileMenu = document.querySelector("#mobile-menu-icon");
+const mainNav = document.querySelector(".main-nav")
 
-// //https://www.youtube.com/watch?v=H4MkGzoACpQ
-// //we can do this in CSS
+const toggleNav = () => {
+    console.log('click');
+    mainNav.classList.toggle('displayElement');
+}
 
-// //this is wrong. display is being added to the html element. Should be toggling between classes
-// //we can also check to see the size of the window to add or remove class
-// const toggleNav = () => {
-//     //if mobile mobile 
-//     if (mainNav.style.display === "none") {
-//         mainNav.style.display = "block";
-//       } else {
-//         mainNav.style.display = "none";
-//     }
-// }
-
-// mobileNav.addEventListener("click", toggleNav);
+mobileMenu.addEventListener("click", toggleNav);
 
 // const image = document.querySelector("#header-logo")
 

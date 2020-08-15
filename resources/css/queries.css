@@ -62,13 +62,13 @@
         display: none;
         width: 100%;
         margin: 0;
+        transition: all 3s ease;
     }
 
     .main-nav li { 
         display: block; 
         margin: 0;
         text-align: center;
-
     }
 
     .nav-other:link,
@@ -89,11 +89,15 @@
         padding-top: 12px;
     }
 
-    .mobile-nav-icon { display: inline-block; }
+    #mobile-menu-icon { display: inline-block; }
 
-    #toggle:checked ~ .main-nav {
+    .displayElement {
         display: block;
     }
+
+    /* #toggle:checked ~ .main-nav {
+        display: block;
+    } */
 
 /* ---------------------------- */
 /* Comics */

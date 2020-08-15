@@ -116,7 +116,7 @@ h1 {
     border-bottom: 2px solid #C2BB8A; 
 }
 
-.mobile-nav-icon {
+#mobile-menu-icon {
     float: right;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -125,7 +125,7 @@ h1 {
     display: none;
 }
 
-.mobile-nav-icon i {
+#mobile-menu-icon i {
     font-size: 200%;
     color: #C2BB8A;
 }
