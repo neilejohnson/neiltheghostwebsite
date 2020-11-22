@@ -18,34 +18,36 @@
         <!-- google font. I can change this down the road -->
         <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
-        <title>neil.the.ghost</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <title>Welcome to Neil's Short Stories</title>
     </head>
     <!-- the stuff at the top. -->
     <!-- body of the website. this is the contents of the website -->
     <body>
         <div class="quote-bar">
-            <p id="quote">“The secret of getting ahead is getting started.” – Mark Twain</p>
+            <p id="quote"></p>
         </div>
         <div class="content">
             <div class="left-column">
                 <section class="nav-section">
-                    <ul class="nav-list">
-                        <li>【 home 】</li>
-                        <li>【 comics 】</li>
-                        <li>【 illustration 】</li>
-                        <li>【 music 】</li>
-                        <li>【 store 】</li>
-                        <li>【 about 】</li>
+                    <ul>
+                        <li><a href="../index.html">【 home 】</a></li>
+                        <li><a href="../comics/">【 comics 】</a></li>
+                        <li><a href="../illustration/">【 illustration 】</a></li>
+                        <li><a href="../music/">【 music 】</a></li>
+                        <li><a href="https://gumroad.com/neiltheghost">【 store 】</a></li>
+                        <li><a href="../about/">【 about 】</a></li>
                     </ul>
                 </section>
                 <section class="stories-section">
-                    <ul class="stories-list">
+                    <ul>
                         <li><span>☆</span>☆MORE STORIES☆<span>☆</span></li>                    
-                        <li>【 the last stop 】</li>
-                        <li>【 pippin 】</li>
-                        <li>【 the opossum 】</li>
-                        <li>【 fleece 】</li>
-                        <li>【 titan arum 】</li>
+                        <li><p id="pippin">【 pippin 】</p></li>
+                        <li><p id="opossum">【 the opossum 】</p></li>
+                        <li><p id="fleece">【 fleece 】</p></li>
+                        <li><p id="titan">【 titan arum 】</p></li>
+                        <li><p id="heart">【 heart-shaped box 】</p></li>
                     </ul>
                 </section>
             </div>
@@ -53,51 +55,26 @@
                 <section class="header-section">
                     <h1>Short Stories</h1>
                 </section>
-                <section class="comic-section">
+                <section id="comic-section">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-1.jpg">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-2.jpg">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-3.jpg">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-4.jpg">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-5.jpg">
+                    <img src="../resources/img/comics/short-stories/pippin/pippin-6.jpg">
                 </section>
             </div>
-            <div class="bottom">
-
-            </div>
         </div>
-
-
-        <!-- <div class="header">
-            <nav class="row">
-                <a id="mobile-menu-icon"><i class="ion-navicon-round"></i></a>
-                <ul class="main-nav">
-                    <li><a class="nav-other" href="../index.html">Home</a></li>
-                    <li><a class="nav-focus" href="../comics/">Comics</a></li>
-                    <li><a class="nav-other" href="../illustration/">Illustration</a></li>
-                    <li><a class="nav-other" href="../music/">Music</a></li>
-                    <li><a class="nav-other" href="https://gumroad.com/neiltheghost">Store</a></li>
-                    <li><a class="nav-other" href="../about/">About</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section class="ribbon">
-            <img src="../resources/img/comics/the-last-stop/the-last-stop-ribbon.jpg">
-        </section>
-        <section class="comic-description">
-            <p>
-                <i>The Last Stop was written as a ...</i>
-            </p>
-        </section>
-        <section class="comic-container">
-                <img src="../resources/img/comics/short-stories/pippin/pippin-preview.jpg">
-        </section>
         <footer>
-            <div class="row">
-                <ul class="social-links">
-                    <li><a href="https://github.com/neilejohnson"><i class="ion-social-github-outline"></i></a></li>
-                    <li><a href="https://www.instagram.com/burningflies/"><i class="ion-social-instagram-outline"></i></a></li>
-                    <li><a href="https://twitter.com/neil_the_ghost"><i class="ion-social-twitter-outline"></i></a></li>
-                </ul>
-            </div>
-            <p class="footer-text">
-                COPYRIGHT<br>MMXX<br><span>by</span> NEIL JOHNSON
-            </p>
+            <ul class="social-links">
+                <li><a href="https://github.com/neilejohnson"><img src="../resources/img/misc/github-button.jpg"></a></li>
+                <li><a href="https://www.instagram.com/burningflies/"><img src="../resources/img/misc/instagram-button.jpg"></a></li>
+                <li><a href="https://twitter.com/neil_the_ghost"><img src="../resources/img/misc/twitter-button.jpg"></a></li>
+            </ul>
+            <section class="copyright">
+                © 2020 Neil Johnson. All Right Reserved
+            </section>
         </footer>
-        <script src="../resources/js/app.js"></script> -->
+    <script src="../resources/js/short-stories.js"></script>
     </body>
 </html>
